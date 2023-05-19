@@ -14,15 +14,12 @@
 
 </html>
 <script>
-    const user = {
-        name: 'Tom',
-        age: 18,
-        sex: 'male',
-        address: 'Beijing'
-    };
+    const obj1 = { a: 1, b: 2 };
+    const obj2 = { c: 31, d: 4, a:1 };
+    const obj3 = Object.assign({}, obj1, obj2);
+    console.log(obj3); // 输出：{a: 1, b: 2, c: 3, d: 4}
 
-    const { name, age } = user;
-    console.log(name, age); // 输出：Tom 18
+
 
 
 </script>
